@@ -1,0 +1,175 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>关于本站 | Gridea</title>
+<link rel="shortcut icon" href="https://laotan23333.github.io/favicon.ico?v=1629973610260">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://laotan23333.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="关于本站 | Gridea - Atom Feed" href="https://laotan23333.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="hello，大家好。欢迎光临我的小站。本站集软件分享，白嫖小妙招等功能与一体。欢迎各位常光临！
+1.关于博主
+00后，电脑控。B站UP主一枚@来路不明的微风。主要出品数码区、科技区、偶尔发布vlog。
+喜欢摆弄电脑，伪高手。
+新初一学生一枚..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://laotan23333.github.io">
+  <img class="avatar" src="https://laotan23333.github.io/images/avatar.png?v=1629973610260" alt="">
+  </a>
+  <h1 class="site-title">
+    Gridea
+  </h1>
+  <p class="site-description">
+    温故而知新
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          教程
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          白嫖
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          联系
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              关于本站
+            </h2>
+            <div class="post-info">
+              <span>
+                2021-08-26
+              </span>
+              <span>
+                1 min read
+              </span>
+              
+            </div>
+            
+              <img class="post-feature-image" src="https://laotan23333.github.io/post-images/guan-yu-ben-zhan.png" alt="">
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <p>hello，大家好。欢迎光临我的小站。本站集软件分享，白嫖小妙招等功能与一体。欢迎各位常光临！<br>
+1.关于博主<br>
+00后，电脑控。B站UP主一枚@来路不明的微风。主要出品数码区、科技区、偶尔发布vlog。<br>
+喜欢摆弄电脑，伪高手。<br>
+新初一学生一枚，B站下一期更新：如何获取Microsoft 365免费永久版，不会翻车！<br>
+2.关于本站<br>
+此站是博主脑子一热，开发的一个基于GitHub的个人博客网站。欢迎各位转发（貌似是不可能的hh）<br>
+3.关于更新<br>
+随缘更新<br>
+4.博主的电脑<br>
+Windows11最新预览版<br>
+5.网站软件<br>
+Gridea</p>
+<p>感谢B站ZhouS数码提供技术支持！</p>
+
+              </div>
+              <div class="toc-container">
+                
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://laotan23333.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>

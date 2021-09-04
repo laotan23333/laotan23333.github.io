@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://laotan23333.github.io</id>
     <title>微风的小站</title>
-    <updated>2021-09-04T10:44:01.926Z</updated>
+    <updated>2021-09-04T10:48:32.073Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://laotan23333.github.io"/>
     <link rel="self" href="https://laotan23333.github.io/atom.xml"/>
@@ -10,6 +10,13 @@
     <logo>https://laotan23333.github.io/images/avatar.png</logo>
     <icon>https://laotan23333.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, 微风的小站</rights>
+    <entry>
+        <title type="html"><![CDATA[【白嫖区 上】如何获取Microsoft 365永久版，不是教育版，不会翻车！]]></title>
+        <id>https://laotan23333.github.io/bai-piao-qu-ru-he-huo-qu-microsoft-365-yong-jiu-ban-bu-shi-jiao-yu-ban-bu-hui-fan-che/</id>
+        <link href="https://laotan23333.github.io/bai-piao-qu-ru-he-huo-qu-microsoft-365-yong-jiu-ban-bu-shi-jiao-yu-ban-bu-hui-fan-che/">
+        </link>
+        <updated>2021-08-27T04:30:22.000Z</updated>
+    </entry>
     <entry>
         <title type="html"><![CDATA[关于本站]]></title>
         <id>https://laotan23333.github.io/guan-yu-ben-zhan/</id>
